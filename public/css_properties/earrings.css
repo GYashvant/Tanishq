@@ -183,7 +183,7 @@ div > img > #auto-change {
     background-color: #b0a16e;
    width: 100%;
    margin: auto;
-   margin-top: 300%; 
+   margin-top: 750%; 
 }
 
 /* footer */
@@ -574,13 +574,13 @@ color: #ccc;
     width: 95%;
 }
 #data{
-    margin-top: 20px;
-    margin-bottom: 50%;
+    margin-top: 5%;
+   /*  margin-bottom: 50%; */
     margin-right: 5%; 
     display: grid;
     gap: 5%;
     text-align: center;
-    grid-template-columns: 30% 30% 30%; 
+    grid-template-columns: 30% 30% 30%;
 }
 #data img{
     width: 100%;
@@ -588,6 +588,7 @@ color: #ccc;
 #details{
     background: #fff;
     cursor: pointer;
+    /* margin-bottom: -30%; */
     border: none;
 }
 #details:hover{
@@ -610,6 +611,7 @@ color: #ccc;
     margin-left: 37%;
     width: 23%;
     font-size: 100%;
+    margin-top: 45%;
     border: none;
     cursor: pointer;
     padding: 2%;

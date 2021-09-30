@@ -13,9 +13,3 @@ for ( let i = 0; i < coll.length; i++) {
     } 
 });
 }
-
-/*  creating function when we click on the products, which will redirect to order page */
-/* function  showItem(product){
-    localStorage.setItem("show_item", JSON.stringify(product));
-    window.open("order.html");
-}  */

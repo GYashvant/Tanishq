@@ -1,25 +1,15 @@
 const mongoose = require("mongoose")
 
-
+//-------creating a schema for earrings products--------//
 
 const earringSchema = new mongoose.Schema({
-    image:{type:String, required:true},
     name:{type:String, required:true},
-    price:{type:Number, required:true}
+    price:{type:Number, required:true},
+    image:{type:String, required:true}
+},{
+    versionKey:false
 })
 
-const Img = mongoose.model("image", imgSchema);
+const Earring = mongoose.model("earring", earringSchema);
 
-app.post("/details", async(req, res)=>{
-    const detalis = await Img.create(req.body)
-
-    return res.status(201).send({detalis})
-})
-
-app.get("/details", async(req, res)=>{
-    const detalis = await Img.find()
-
-    res.render("all_users",{
-        detalis
-    })
-})
+module.exports = Earring;
