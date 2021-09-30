@@ -1,0 +1,373 @@
+*{
+    font-family: 'Roboto Slab', serif !important;
+}
+
+#ctypin{
+display: flex;
+gap: 3%;
+font-family: 'Roboto Slab', serif;
+}
+
+#ctypin >input{
+width: 49%;
+height: 45px;
+background-color: rgb(245, 245, 245);
+border: 1px solid rgb(240, 240, 240);
+text-align: left;
+padding-left: 3%;
+font-family: 'Roboto Slab', serif;
+font-size: 15px;
+font-weight: 200;
+}
+
+#paymntsdiv{
+display: flex;
+/* border: 1px solid red; */
+width: 90%;
+margin: auto;
+font-family: 'Roboto Slab', serif;
+gap: 10%;
+
+}
+
+#fieldste4{
+width: 40%;
+display: grid;
+gap: 3%;
+height: 500px;
+font-family: 'Roboto Slab', serif;
+
+}
+#fieldste4 >input{
+height: 45px;
+background-color: rgb(245, 245, 245);
+border: 1px solid rgb(240, 240, 240);
+text-align: left;
+font-size: 16px;
+font-weight: 200;
+padding-left: 3%;
+font-family: 'Roboto Slab', serif;
+}
+
+#legend4{
+display: flex;
+gap: 1%;
+font-size: 20px;
+text-align: center;
+padding: 0% 3%;
+font-family: 'Roboto Slab', serif;
+
+}
+#fieldste5{
+width: 40%;
+display: grid;
+gap: 3%;
+height: 310px;
+font-family: 'Roboto Slab', serif;
+}
+
+#fieldste5 >input{
+height: 45px;
+background-color: rgb(245, 245, 245);
+border: 1px solid rgb(240, 240, 240);
+text-align: left;
+font-size: 16px;
+font-weight: 200;
+padding-left: 3%;
+font-family: 'Roboto Slab', serif;
+}
+
+#legend5{
+display: flex;
+gap: 1%;
+font-size: 20px;
+text-align: center;
+padding: 0% 3%;
+font-family: 'Roboto Slab', serif;
+
+}
+#acceptedimage{
+display: flex;
+gap: 9%;
+justify-content: center;
+font-family: 'Roboto Slab', serif;
+}
+#acceptedimage >img{
+width:10%;
+object-fit: contain;
+}
+#expiryyear{
+display: flex;
+gap: 5%;
+font-family: 'Roboto Slab', serif;
+
+}
+#expiryyear>input{
+height: 45px;
+background-color: rgb(245, 245, 245);
+border: 1px solid rgb(240, 240, 240);
+font-family: 'Roboto Slab', serif;
+font-size: 16px;
+font-weight: 200;
+padding-left: 3%;
+}
+#cvv{
+width: 20%;
+font-family: 'Roboto Slab', serif;
+}
+#expirymonth{
+width: 50%;
+}
+#expiryyear1{
+width: 50%;
+}
+#paymnetdon{
+height: 45px;
+color: white;
+background-color: black;
+font-size: 20px;
+font-family: 'Roboto Slab', serif;
+border: 1px solid black;
+}
+
+#address{
+text-align: center;
+font-size: 25px;
+margin-bottom: 4%;
+font-family: 'Roboto Slab', serif;
+}
+
+/* ------------------------------------------- */
+
+
+/* mehboob */
+/* this is TOPNavBar1 work by Asraf */
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+#div1{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+height: 43px;
+
+}
+.one-sdv{
+display: flex;
+flex-direction: row;
+list-style-type: none;
+
+}
+
+
+#ul1{
+margin-left: 80px;
+}
+
+#ul2{
+margin-right: 120px;
+}
+
+#div1 > ul > li{
+padding: 16px 20px;
+color: #000000;
+
+font-size: 12px ;
+font-family: sans-serif;
+font-weight:bold;
+text-shadow: 2px 2px 5px rgb(224, 195, 195);
+}
+
+i{
+padding: 0px 5px;
+font-size: 15px;
+cursor: pointer;
+}
+
+/* TopNavBar 2 */
+
+#logo{
+margin-left: 120px;
+margin-right: 30px;
+padding-bottom: 10px;
+width: 121px;
+height: 58px;
+}
+
+#div2{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+height: 43px;
+margin: 30px;
+
+}
+
+#topnav2{
+display: flex;
+flex-direction: row;
+list-style-type: none;
+}
+
+.top > li {
+padding: 16px 20px;
+color: #181818;
+font-size: 13px ;
+font-weight: bold;
+font-family: sans-serif;
+
+}
+#div2 > ul > li :hover{
+color: #000000;
+}
+
+#topnav2{
+margin-right: 280px;
+}
+.icn-1{
+margin-left: 80px;
+
+}
+
+/* .icn-2{
+margin-left: 0px 0px 50px 0px;
+} */
+
+div > img > #auto-change {
+max-width: 100%;
+height: auto;
+
+}
+#auto1{
+margin-bottom: 100px;
+}
+
+a {
+list-style-type: none;
+list-style: none;
+text-decoration: none;
+opacity: 0.7;
+color: #181818;
+}
+h1{
+font-family:  'Playfair Display', serif;
+font-size: 30px;
+text-transform: capitalize;
+opacity: 0.8;
+text-align: center;
+padding: 20px 20px;
+}
+
+.exlus{
+display: flex;
+/* justify-content: space-evenly; */
+margin-left: 240px;
+margin-right: 240px;
+
+}
+
+#heading1{
+text-align: center;
+height: 30px;
+}
+
+.fimg{
+padding: 10px;
+}
+.simg{
+padding: 10px;
+
+}
+.timg{
+padding: 10px;
+padding-bottom: 20px;
+}
+.banner{
+display: flex;
+float: right;
+}
+
+/* .cont1{
+background-image: url("https://staticimg.titan.co.in/Tanishq/Banners/rivaah/images/banner/Tamil/Nayanatara_tamil.jpg");
+height: 63vh;
+background-position: top-left 14%;
+background-position-x: left 14% ;
+background-position-y:top ;
+/* margin: 30px 0px; 
+
+}  
+/* Dropdown */
+.navbar{
+overflow: hidden;
+
+}
+
+.dropdown{
+display: right;
+overflow: hidden;
+}
+.dropdown .dropbtn{
+border: none;
+outline: none;
+color: white;
+font-size: 12px;
+padding: 14px 16px;
+background-color: inherit;
+font: inherit;
+margin: 0;
+}
+.dropbtn{
+font-size: 10px;
+}
+
+.navbar a:hover,dropdown:hover .dropbtn{
+color: rgb(197, 14, 45);
+
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: whitesmoke;
+width: 100%;
+left: 0;
+box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content .header {
+/* background: #f9f9f9; */
+padding-bottom: 20px;
+}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.column {
+float: left;
+width: 33.33%;
+padding: 10px;
+background-color: #fafafa;
+height: 450px;
+}
+
+.column a {
+float: none;
+color: black;
+padding: 12px;
+padding-bottom: 10PX;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.column a:hover {
+color: #181818;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}  
