@@ -5,10 +5,10 @@ const router = express.Router();
 
 
 
-router.post("",async(req,res)=>{
-   const detail = await Cart.create(req.body)
-   return res.send(detail)
-})
+// router.post("",async(req,res)=>{
+//    const detail = await Cart.create(req.body)
+//    return res.send(detail)
+// })
 
 
 router.get("",async(req,res)=>{

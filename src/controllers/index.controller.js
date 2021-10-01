@@ -9,3 +9,11 @@ router.get("",async(req,res)=>{
 })
 
 module.exports = router
+
+
+
+router.get("/earrings",async(req,res)=>{
+    const detail = await Index.find().lean().exec()
+    
+     res.render("earring")
+ })

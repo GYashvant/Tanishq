@@ -11,18 +11,19 @@ const signupController = require("./controllers/signup.controller")
 const paymentController = require("./controllers/payment.controller")
 const cartController = require("./controllers/cart.controller")
 const indexController = require("./controllers/index.controller")
-
+const priceController = require("./controllers/price.controller")
 // app.set("views",path.join(__dirname,"views"))
 app.set("view engine","ejs")
-app.use(bodyParser.urlencoded({extended: true}));
+// app.use(bodyParser.urlencoded({extended: true}));
 
-
+app.use("/price",priceController)
 app.use("/earrings",earringController)
 app.use("/logins",loginController)
 app.use("/signups",signupController)
 app.use("/payments",paymentController)
 app.use("/carts",cartController)
 app.use("/indexs",indexController)
+app.use("",earringController)
 app.use(express.static("public"))
 
 app.listen(3000,async(req,res)=>{
