@@ -409,7 +409,7 @@
         <div id="line1"></div>
         <button  class="collapsible"><b>PRICE</b></button> 
         <div class="content">
-            <input type="checkbox" id="price1" name="price1" onchange="window.location.href ='/price'" >
+            <input type="checkbox" id="price1" name="price1" onclick="window.location.href ='/price'" >
             <label for="price1">Less than ₹10000</label><br>
             <input type="checkbox" id="price2" name="price2">
             <label for="price2">Between ₹10000 and ₹25000</label><br>
@@ -530,6 +530,7 @@
     </div>
     <img id="pic" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/4c84c9ba-84ac-4f58-8018-343bbdfff03d/desktop/Desktop---1000-200.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-4c84c9ba-84ac-4f58-8018-343bbdfff03d-desktop-nLa9.bc"/>
     <div id="data">
+        <%if(details){%>
         <%details.forEach (function(item){%>
         <button id="details" onclick="window.open('/<%=item.name%>')">
             <img src="<%=item.image%>"/>
@@ -537,12 +538,12 @@
             <p id="price">₹<%=item.price%></p>
         </button>
         <% }) %>
-    </div>
-    <div id="extraProd"></div>
+        <% } %>
+    </div> 
     <div>
-        <button id="smp" onclick="window.location.href ='/earrings/page2'">SEE MORE PRODUCTS</button>
+        <button id="smp" onclick= "window.location.href ='/earrings'">SEE MORE PRODUCTS</button>
     </div>
-</div>
+    </div>
 </div>
   <!-- footer section -->
 <div class="top-footer">

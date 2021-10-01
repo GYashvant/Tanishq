@@ -580,16 +580,22 @@ color: #ccc;
     display: grid;
     gap: 5%;
     text-align: center;
+    /* border: 1px solid red; */
     grid-template-columns: 30% 30% 30%;
+                        
 }
 #data img{
     width: 100%;
+    /* border: 1px solid green; */
+    
 }
 #details{
     background: #fff;
     cursor: pointer;
-    /* margin-bottom: -30%; */
     border: none;
+    margin-bottom: -60px;
+    /* margin-top: -20px; */
+    /* margin-left: 32px; */
 }
 #details:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);

@@ -16,7 +16,11 @@ app.use("/price",priceController)
 
 app.use("/earrings",earringController)
 
+
+
 app.use("", earringController)
+
+
 
 app.use(express.static("public"))
 
