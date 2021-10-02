@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart Page</title>
     <link href="https://www.tanishq.co.in/favicon.png" rel="shortcut icon" type="image/x-icon">
-    <link rel="stylesheet" href="./css_properties/cart.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="css/order.css">
+    <script src="https://kit.fontawesome.com/da2d034d86.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+    <title id="title"><%=details[0].name%></title>
 </head>
 <body>
-
     <div id="div1" style=" margin: 0px; padding: 0px; box-sizing: border-box;">
         <ul id="ul1" class="one-sdv">
             <li><a class="ancr" href="#">BRANDS</a></li>
@@ -21,12 +18,11 @@
             <li><a class="ancr" href="#">GOLD RATE</a></li>
         </ul>
         <ul id="ul2" class="one-sdv">
-           
             <li><a class="ancr" href="#">ENCIRCLE</a></li>
             <li><a class="ancr" href="#">GOLDEN HARVEST</a></li>
             <li><a class="ancr" href="#">BOOK AN APPOINTMENT</a></li>
             <li><i class="ancr" class="far fa-heart"></i><a href="#" style="text-decoration: none;">WISHLIST</a></li>
-            <li><i class="ancr" class="fas fa-shopping-cart"></i><a href="#" style="text-decoration: none;">CART(<span id="cart">0</span>)</a></li>
+            <li><i class="ancr" class="fas fa-shopping-cart"></i><a href="cart.html"  style="text-decoration: none;">CART(<span id="cart">0</span>)</a></li>
         </ul>
     </div>
     <hr class="hr">
@@ -139,7 +135,7 @@
                         </div>
                         <div class="row">
                             <div class="column">
-                                <h3>EARINGS</h3>
+                                <a href="earrings.html">EARRINGS</a>
                                 <a href="#">STUD</a>
                                 <a href="#">HOOP</a>
                                 <a href="#">DROP</a>
@@ -171,7 +167,8 @@
             <div class="navbar">
 
                 <div class="dropdown">
-                    <button class="dropbtn" style="color: #181818;opacity: 0.8;">ENGAEMENT RINGS</button>
+                    <button class="dropbtn" style="color: #181818;opacity: 0.8;">ENGAEMENT RINGS
+                    </button>
                     <div class="dropdown-content">
                         <div class="header">
 
@@ -395,42 +392,38 @@
             <li class="icn-1"><i class="fas fa-map-marker-alt"></i></li>
             <li class="icn-2"><i class="fas fa-search"></i></li>
         </ul>
-
     </div>
     <hr class="hr">
-
-    <p><a href="index.html">HOME</a>  > CART</p>
-    
-    <h1 id="num_of_products">Number of products</h1>
-<div id="biggerforflex">
-
-    <div id="items_cartdiv">
-       
+    <!-- ending for top two nav-bars -->
+    <div id="pageToHome">
+      <button id="home-btn" onclick="goToHome()">HOME</button>
+      <div id="arrow">></div>
+      <div id="text1">PRODUCT</div>
+      <div id="arrow">></div>
+      <div id="text2"><%=details[0].name%></div>
     </div>
-     
-    <div id="pricedetails">
-        <h1 id="summary">ORDER SUMMARY</h1>
-        <div id="forinputofvoucher">
-            <input type="text" placeholder="Enter Promo code" id="voucher">
-            <button id="applyvoucher" onclick="applyVoucher(event)">APPLY</button>
-        </div>
-          <p id="showsuccessofvoucher"></p>
-        <div id="ordertotal">
-            <p>ORDER TOTAL  <span id="for_total"></span></p>
-        </div>
 
-        <div id="shippingdiscount">
-            <p>SHIPPING <span id="free1">FREE</span></p>
+        <img id="picture" src="<%=details[0].image%>"/>
+        <div id="matter-txt">
+            <h5>512318SAXABA182BA005239<span id="rating">☆☆☆☆☆</span><span>Write a review</span></h5>
+            <div id="item_name"><%=details[0].name%></div>
+            <h2 id="price_txt">PRICE<span id="rupee_sym">₹</span><span id="price"><%=details[0].price%></span></h2>
+            <div id="taxes">(Incl. of all taxes)<span><a href="Price breakup" id="p-break">Price breakup</a></span></div>
+            <div id="weight-txt">*Weight and Price may vary subject to the stock available.</div>
+            <p id="parah">The perfect touch of glitz to your ensemble, this pair of stud earrings is</br>crafted in 18 Karat Yellow Gold. Stone Clarity SI2</p>
+            <a href="#" id="pd">Product details</a>
+            <div id="gw">Gross Weight</div>
+            <button id="gram-btn">5.500g</button>
+            <div id="quantity">
+            <h4 id="net-qty">Net Qty</h4>
+            <h3><span id="minus">-</span><span id="qty">1N</span><span id="plus">+</span></h3>
+            </div>
+            <div id="btns">
+            <button id="try-on">TRY ON</button>
+            <button id="add-cart" onclick="window.open('/cart/<%=details[0].name%>')" >ADD TO CART</button>
+            <button id="booking">BOOK AN APPOINTMENT</button>
+            </div>
+            <p id="correct">✓<span id="items-left">ONLY 1 LEFT IN STOCK</span></p>
         </div>
-       
-        <div id="youpaydiv">
-            <p id="youpay">YOU PAY <span id="for_total1"></span></p>
-        </div>
-        <p id="inclusive">INCLUSIVE OF ALL TAXES*</p>
-        <div id="linkcheckout"><button id="checkoutbot">PROCEED TO CHECKOUT</button></div>
-    </div>
- 
-</div>
 </body>
 </html>
-<script src="./scripts/cart.js"></script>

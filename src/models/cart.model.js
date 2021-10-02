@@ -2,7 +2,7 @@ const mongoose = require("mongoose")
 
 //-------creating a schema for earrings products--------//
 
-const earringSchema = new mongoose.Schema({
+const cartSchema = new mongoose.Schema({
     name:{type:String, required:true},
     price:{type:Number, required:true},
     image:{type:String, required:true}
@@ -10,6 +10,6 @@ const earringSchema = new mongoose.Schema({
     versionKey:false
 })
 
-const Earring = mongoose.model("earring", earringSchema);
+const Cart = mongoose.model("cart", cartSchema);
 
-module.exports = Earring;
+module.exports = Cart;
