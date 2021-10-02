@@ -1,55 +1,92 @@
+body{
+    font-size: 62.5%;
+    width: 100%;
+}
 #div1{
     display: flex;
     flex-direction: row;
-    height: 20px;
+    /* height: 20px; */
+    /* margin: 0px; */
+    /* padding: 0px; */
+    box-sizing: border-box;
+    width: 100%;
+    /* border: 1px solid teal; */
 }
 .one-sdv{
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    /* border: 2px solid pink; */
+    width: 100%;
     
 }
 #ul1{
     margin-top: 5px;
+    /* border: 2px solid green; */
+    width: 40%;
 }
 
 #ul2{
-    margin-right: 120px;
-    margin-left: 140px;
+    /* margin-right: 120px; */
+    /* margin-left: 140px; */
     margin-top: 5px;
 }
 
- #div1 > ul  li a{
+ #div1 > #ul2  li{
     color: #000000;
-    margin-left: 30px;
-    font-size: 12px ;
+    margin-left: 6%;
+    /* font-size: 12px ; */
+    font-size: .7rem;
     font-family: sans-serif;
     font-weight:bold;
     text-shadow: 2px 2px 5px rgb(224, 195, 195);
+    /* border: 2px solid blue; */
+    /* width: 50%; */
+    padding: 0%;
+    text-align: center;
+} 
+#div1 > #ul1  li{
+    color: #000000;
+    margin-left: 6%;
+    /* font-size: 12px ; */
+    font-size: .7rem;
+    font-family: sans-serif;
+    font-weight:bold;
+    text-shadow: 2px 2px 5px rgb(224, 195, 195);
+    /* border: 2px solid blue; */
+    /* width: 50%; */
+    padding: 0%;
+    text-align: center;
 } 
 
 /* TopNavBar 2 */
 #logo{
-    margin-left: 50px;
-    margin-right: 10px;
+    /* margin-left: 50px; */
+    /* margin-right: 10px; */
     margin-top: -10px;
-    width: 100px;
-    height: 50px;
+    /* width: 100px; */
+    /* height: 50px; */
+    /* border: 1px solid orange; */
 }
 
 #div2{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 43px;
-    margin: 30px;
+    /* height: 43px; */
+    /* margin: 30px; */
+    padding: 20px;
     letter-spacing: 1px;
+    /* border: 1px solid red; */
+    width: 100%;
 }
 
 #topnav2{
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    /* border: 1px solid blue; */
+    width: 80%;
 }
 
 .top > li {
@@ -62,6 +99,7 @@
 }
 #div2 > ul > li :hover{
     color: #000000;
+    /* border: 1px solid yellow; */
 }
 
 #topnav2{
@@ -71,15 +109,18 @@
     margin-left: 80px;
     width: 10px;
     cursor: pointer;
+    /* border: 1px solid green; */
 }
 
  .icn-2{
    cursor: pointer;
+   /* border: 1px solid gray; */
 } 
 #slide-img{
     width:100.5%;
     height:auto;
     margin-top: -20px;
+    border: 1px solid red;
 }
 div > img > #auto-change {
     max-width: 100%;
@@ -109,7 +150,6 @@ div > img > #auto-change {
 
  .exlus{
     display: flex;
-    /* justify-content: space-evenly; */
     justify-content: center;
     cursor: pointer;
    
@@ -134,18 +174,6 @@ div > img > #auto-change {
 .banner{
     display: flex;
     float: right;
-}
-
-.mid-btn{
-    /* border: 6px solid red; */
-    width: 50%;
-    margin-left:19%;
-    margin-top: 4%;
-}
-.mid-btn>p{
-    text-align: center;
-    font-size: 20px;
-    color: white;
 }
 
 /* banner img */
@@ -192,63 +220,14 @@ div > img > #auto-change {
     border: 1px solid #181818;
     cursor: pointer;
 }
-
-/* span {
-color:red;
-font-weight:700
-} */
-
-.three-el{
-    background-color: #f2f0e8;
-   /*  height: 35vh;
-    width: 100%; */
-    height: auto;
-    /* margin-top: 2000px;  */
-   /*  display: inline-block; */
-}
-
 .top-footer{
     background-color: #b0a16e;
-   /*  height: 110vh; */
    width: 100%;
    margin: auto;
-   /* border: 7px solid red; */
-}
-.three-el{
-display: grid;
-grid-template-columns: auto auto auto;
-text-align: center;
-height: 180px;
-justify-content: center;
-align-items: center;
-
-}
-.one-el{
-padding: 20px;
-font-family:  "playfair display";
-font-weight: 400;
-
-}
-.one el > h3{
-    font-family: "playfair display";
-
-}
-.one-el > p {
-    font-family: "playfair display";
-    font-weight: 400;
-}
-#ftr{
-    margin-top: 50px;
+   margin-top: 300%; 
 }
 
 /* footer */
-.in-foot{
-    display: block;
-    text-align: center;
-    color: #FFFFFF;
-    align-items: center;
-   /* border: 6px solid blue; */
-}
 .ft-tg{
     text-align: center;
     
@@ -301,17 +280,12 @@ font-weight: 400;
 .first-items > ul > li,.second-items > ul > li,.third-items > ul > li{
     list-style-type: none;
     text-decoration: none;
-   /* margin-left: 750px; */
-    /* border: 3px solid red; */
+   line-height: 200%;
 }
 
 ul > .ft-itms{
     margin-bottom: 50px;
    margin-left: 20px;
-
-
-
-   /* line-height: 50px; */
    font-weight: bold;
 }
 #ft-mail{
@@ -319,13 +293,12 @@ ul > .ft-itms{
     height: 52px;
     border: 1px solid white;
     color: white;
-    background-color: #b0a16e
+    background-color: #b0a16e;
+    text-align: center;
+    letter-spacing: 1%;
 }
 .btn-cls{
     display: flex;
-    
-    
-    
 }
 #t-btn{
     width: 100px;
@@ -345,7 +318,7 @@ ul > .ft-itms{
 
 #faicon{
    padding: 1%;
-    margin-left: 10px;
+   margin-left: 2%;
 }
 
 #app{
@@ -375,10 +348,8 @@ ul > .ft-itms{
     justify-content: space-evenly;
     align-items: center;
     padding: 12px;
-    /* margin: -20px; */
     background-color: rgb(176, 161, 110);
     color: rgb(176, 161, 110);
-    /* border: 6px solid yellow; */
     width: 90%;
     margin: auto;
 }
@@ -417,17 +388,6 @@ ul > .ft-itms{
     width: 70%;
     text-align: center;
     margin: auto;
-}
-placeholder{
-    color: white;
-}
-#divforset{
-    display: flex;
-    width: 70%;
-    margin: auto;
-    /* border: 2px solid black; */
-    justify-content: center;
-   
 }
 #ft-city1{
    margin-right: 0% !important;
@@ -577,7 +537,7 @@ color: #ccc;
 #dropdowns{
     width: 1200px;
    position: absolute;
-   margin: 0;
+   margin: 0%;
 } 
 #line1{
     border: 0.1px solid rgb(233, 227, 227);
@@ -590,8 +550,8 @@ color: #ccc;
 .collapsible {
     background-color: white;
     cursor: pointer;
-    padding: 15px;
     width: 20%;
+    padding: 1.5%;
     border: none;
     margin-left: -14px;
     text-align: left;
@@ -612,7 +572,6 @@ color: #ccc;
     overflow: hidden;
     letter-spacing: 1px;
     line-height: 200%;
-    /* line-height-step: 20px; */
     transition: max-height 0.2s;
     max-width: 20%;
 }
@@ -657,51 +616,46 @@ color: #ccc;
 }
 #data{
     margin-top: 20px;
-    /* margin-bottom: 400px;
-    margin-right: 30px; */
+    margin-bottom: 50%;
+    margin-right: 5%; 
     display: grid;
     gap: 5%;
     text-align: center;
     grid-template-columns: 30% 30% 30%; 
-                    
 }
-
 #data img{
     width: 100%;
 }
-#hovereffect{
+#details{
     background: #fff;
     cursor: pointer;
     border: none;
 }
-
-#hovereffect:hover{
-  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+#details:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
-
-#items_name{
+#name{
+    font-size: medium;
+    font-weight: 500;
+    font-display: sa;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    cursor: pointer;
-    text-align: center;
-    font-weight:unset;
-    letter-spacing: 1px;
 }
-#price-style{
-    text-decoration: line-through;
-    color: rgb(170, 165, 165);
+#price{
     font-weight: bold;
+    font-size: 130%;
 }
-#charge, #text{
-    background-color: #e9c456;
-    text-align: center;
-    width: 230px;
-    border-radius: 4px;
+#extraProd{
+    margin-left: 36%;
+}
+#smp{
+    margin-left: 37%;
+    width: 23%;
+    font-size: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 2%;
+    background-color: black;
     color: white;
-    font-size: 13px;
-    padding: 4px;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 23px;
 }
 #text{
     width: 130px;

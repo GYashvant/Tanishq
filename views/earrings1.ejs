@@ -9,13 +9,14 @@
 <title>Earrings | Buy Earrings for Girls & Women Online</title>
 </head>
 <body>
-    <div id="div1" style=" margin: 0px; padding: 0px; box-sizing: border-box;">
+    <div id="div1">
         <ul id="ul1" class="one-sdv">
             <li><a class="ancr" href="#">BRANDS</a></li>
             <li><a class="ancr" href="#">CURRENCY SELECTOR</a></li>
             <li><a class="ancr" href="#">GOLD RATE</a></li>
         </ul>
         <ul id="ul2" class="one-sdv">
+            <li><a class="ancr" href="html/login.html">LOGIN</a></li>
             <li><a class="ancr" href="#">ENCIRCLE</a></li>
             <li><a class="ancr" href="#">GOLDEN HARVEST</a></li>
             <li><a class="ancr" href="#">BOOK AN APPOINTMENT</a></li>
@@ -24,9 +25,9 @@
         </ul>
     </div>
     <hr class="hr">
-    <div id="div2" style="color: rgb(24, 24, 24); ">
+    <div id="div2" style="color: rgb(24, 24, 24);">
 
-        <a href="index.html"> <img  id="logo" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/cb53f671-01d0-449e-b18d-a4e61e6ffa0b/TanishqLogo.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-cb53f671-01d0-449e-b18d-a4e61e6ffa0b-mC036IT" alt=""></a>
+        <a href="html/index.html"> <img  id="logo" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/cb53f671-01d0-449e-b18d-a4e61e6ffa0b/TanishqLogo.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-cb53f671-01d0-449e-b18d-a4e61e6ffa0b-mC036IT" alt=""></a>
 
         <ul id="topnav2" class="top"
             style="font-size: 13px;font-weight: bold;margin: 0px; padding: 0px;box-sizing: border-box;">
@@ -391,13 +392,12 @@
 
     </div>
     <!-- ending for top two nav-bars -->
-   <!--  creating image -->
     <hr class="hr">
-    <img id="slide-img" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/14707ca8-4da3-444a-b993-3ca2e961c56e/desktop/2500X712.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-14707ca8-4da3-444a-b993-3ca2e961c56e-desktop-nHTEUFb"/>
     <h2 id="location"><span id="store">STORE LOCATOR</span><span id="ba">BOOK AN APPOINTMENT</span><span id="lvc">LIVE VIDEO CALL</span></h2>
     <div id="txt">
-        <h3>FOUND 4155 EARRINGS DESIGNS</h3>
+        <h3>EARRINGS | 5025 DESIGNS</h3>
         <div id="box">COMPARE</div>
+
         <!-- Creating filter source -->
         <div id="filter-cont">
             <div id="filter">Filter By</div>
@@ -528,66 +528,25 @@
         <h4>Sort by</h4>
         <div id="sellers">BEST SELLERS<span id="stand">|</span><span>NEW ARRIVALS</span><span id="stand">|</span><span>POPULARITY</span><span id="stand">|</span><span id="dis">DISCOUNT</span><span id="stand">|</span><span>PRICE</span></div>
     </div>
-    <img id="pic" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/272a85d9-4207-476b-b56d-57929f5aa97c/desktop/1000+x+200+blue-min.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-272a85d9-4207-476b-b56d-57929f5aa97c-desktop-nHdGX1B"/>
+    <img id="pic" src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/4c84c9ba-84ac-4f58-8018-343bbdfff03d/desktop/Desktop---1000-200.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-4c84c9ba-84ac-4f58-8018-343bbdfff03d-desktop-nLa9.bc"/>
     <div id="data">
-        <%details.forEach (function(user){%>
-        <div id="data1">
-            <img src="<%=user.image%>"/>
-            <p><%=user.name%></p>
-            <p>Price:<%=user.price%></p>
-        </div>
+        <%details.forEach (function(item){%>
+        <button id="details" onclick="window.open('/<%=item.name%>')">
+            <img src="<%=item.image%>"/>
+            <p id="name"><%=item.name%></p>
+            <p id="price">₹<%=item.price%></p>
+        </button>
         <% }) %>
-        
+    </div>
+    <div id="extraProd"></div>
+    <div>
+        <button id="smp" onclick="appendData()">SEE MORE PRODUCTS</button>
     </div>
 </div>
 </div>
   <!-- footer section -->
-  <div class="three-el" style="margin-top: 2000px;"> 
-
-
-
-    <div class="one-el">
-        <h3>100% ORIGINAL</h3>
-        <p>All products are original and go through strict quality check</p>
-    </div>
-
-    <div class="one-el">
-        <h3>A TATA PRODUCT</h3>
-        <p>The TATA Seals of Trust comes with all our products</p>
-    </div>
-
-    <div class="one-el">
-        <h3>SHIPPING</h3>
-        <p>Shipping in India is Free. Shipping charges applicable for international locations</p>
-    </div>
-</div>
-
-
 <div class="top-footer">
-
-    <div class="in-foot">
-        <h1 class="ft-tg">Find a Store Near You</h1>
-        <p class="pt-tg">We are currently open 320+ stores in India and we plan to open more number of stores for
-            you Find your nearest store for a 
-            great shopping experience</p>
-
-            <div id="divforset">
-              <button class="class-btn1">USE MY CURRENT LOCATION</button>
-              <input type="text" id="ft-city1" name="city" placeholder="ENTER YOUR CITY/PIN">
-              <button class="class-btn1" id="t-btn1">SEARCH</button>
-            </div>
-        
-    </div>
-
-    <div class="mid-btn">
-      <p>KNOW MORE</p>
-    </div>
-
-   
-
-
     <div class="foot-cont">
-
         <div class="first-items">
             <ul id="ft-itms">
                 <p id="ft-head">Customer Service</p>
@@ -617,7 +576,7 @@
         </div>
 
         <div class="third-items">
-            <p  id="ft-head">Sign up to receive exclusive offers and news</p>
+            <p  id="ft-head">Sign up to receive exclusive offers and</br> news</p>
             <div class="btn-cls">
                 <input type="email" id="ft-mail" name="email" placeholder="ENTER YOUR EMAIL">
                 <Button id="t-btn">SUBSCRIBE</Button>
@@ -628,7 +587,6 @@
                     <a href="https://www.facebook.com/Tanishq/"><i class="fab fa-facebook"></i></a>
                     <a href="https://twitter.com/TanishqJewelry"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.instagram.com/tanishqjewellery/"> <i class="fab fa-instagram"></i></a>
-
                 </p>
             </div>
 
@@ -666,4 +624,4 @@
 </div>
 </body>
 </html>
-<!-- <script src="./scripts/earrings.js"></script> -->
+<script src="scripts/earrings.js"></script>
