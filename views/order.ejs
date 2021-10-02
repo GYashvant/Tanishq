@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://www.tanishq.co.in/favicon.png" rel="shortcut icon" type="image/x-icon">
-    <link rel="stylesheet" href="css_properties/order.css">
+    <link rel="stylesheet" href="css/order.css">
     <script src="https://kit.fontawesome.com/da2d034d86.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
     <title id="title"><%=details[0].name%></title>
@@ -420,7 +420,7 @@
             </div>
             <div id="btns">
             <button id="try-on">TRY ON</button>
-            <button id="add-cart" onclick="addToCart()" >ADD TO CART</button>
+            <button id="add-cart" onclick="window.open('/cart/<%=details[0].name%>')" >ADD TO CART</button>
             <button id="booking">BOOK AN APPOINTMENT</button>
             </div>
             <p id="correct">✓<span id="items-left">ONLY 1 LEFT IN STOCK</span></p>

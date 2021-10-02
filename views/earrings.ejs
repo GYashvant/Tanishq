@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://www.tanishq.co.in/favicon.png" rel="shortcut icon" type="image/x-icon">
-<link rel="stylesheet" href="css_properties/earrings.css">
+<link rel="stylesheet" type="text/css" href="css/earrings.css">
 <script src="https://kit.fontawesome.com/da2d034d86.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
 <title>Earrings | Buy Earrings for Girls & Women Online</title>
@@ -409,14 +409,14 @@
         <div id="line1"></div>
         <button  class="collapsible"><b>PRICE</b></button> 
         <div class="content">
-            <input type="checkbox" id="price1" name="price1" onclick="window.location.href ='/price'" >
+            <input type="checkbox" id="price1" name="price1" onclick="window.location.href ='/price=0-10000'" >
             <label for="price1">Less than ₹10000</label><br>
-            <input type="checkbox" id="price2" name="price2">
+            <input type="checkbox" id="price2" name="price2" onclick="window.location.href ='/price=10000-25000'">
             <label for="price2">Between ₹10000 and ₹25000</label><br>
-            <input type="checkbox" id="price3" name="price3">
+            <input type="checkbox" id="price3" name="price3" onclick="window.location.href ='/price=25000-50000'">
             <label for="price3">Between ₹25000 and ₹50000</label><br>
-            <input type="checkbox" id="price4" name="price4">
-            <label for="price4">Between ₹50000 and ₹100000</label><br>
+            <input type="checkbox" id="price4" name="price4" onclick="window.location.href ='/price=50000-200000'">
+            <label for="price4">Between ₹50000 and ₹200000</label><br>
         </div>
         <div id="line2"></div> 
         <button  class="collapsible"><b>JEWELLERY TYPE</b></button>
@@ -539,11 +539,11 @@
         </button>
         <% }) %>
         <% } %>
-    </div> 
-    <div>
-        <button id="smp" onclick= "window.location.href ='/earrings'">SEE MORE PRODUCTS</button>
+    <div id="smp-div">
+        <button id="smp" onclick= "window.location.href ='/page2'">SEE MORE PRODUCTS</button>
     </div>
     </div>
+ </div> 
 </div>
   <!-- footer section -->
 <div class="top-footer">

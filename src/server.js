@@ -3,26 +3,24 @@ const express = require("express")
 const app = express()
 
 app.use(express.json())
+const connect = require("./configs/db")
 
 app.set("view engine", "ejs")
 
 
-const connect = require("./configs/db")
+const earringController = require("./controllers/earringController")
+const priceController = require("./controllers/priceController")
+const cartController = require("./controllers/cartController")
 
-const earringController = require("./controllers/earring.controller")
-const priceController = require("./controllers/price.controller")
 
+app.use("/cart", cartController)
+app.use("/",earringController)
 app.use("/price",priceController)
 
-app.use("/earrings",earringController)
 
+ app.use(express.static('public')) 
+/* app.use(express.static(__dirname)); */
 
-
-app.use("", earringController)
-
-
-
-app.use(express.static("public"))
 
 app.listen(3000, async function(){
     await connect()

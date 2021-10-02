@@ -578,24 +578,19 @@ color: #ccc;
    /*  margin-bottom: 50%; */
     margin-right: 5%; 
     display: grid;
-    gap: 5%;
+    gap: 2%;
     text-align: center;
-    /* border: 1px solid red; */
     grid-template-columns: 30% 30% 30%;
-                        
+    /* border: 5px solid black; */
 }
 #data img{
     width: 100%;
-    /* border: 1px solid green; */
-    
 }
 #details{
     background: #fff;
     cursor: pointer;
+    /* margin-bottom: -30%; */
     border: none;
-    margin-bottom: -60px;
-    /* margin-top: -20px; */
-    /* margin-left: 32px; */
 }
 #details:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
@@ -604,7 +599,7 @@ color: #ccc;
     font-size: medium;
     font-weight: 500;
     font-display: sa;
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
 }
 #price{
     font-weight: bold;
@@ -612,17 +607,27 @@ color: #ccc;
 }
 #extraProd{
     margin-left: 36%;
+    /* border: 1px solid red; */
 }
 #smp{
-    margin-left: 37%;
-    width: 23%;
+    margin-left: 20%;
+    width: 75%;
     font-size: 100%;
-    margin-top: 45%;
+    height: 160%;
+    /* margin-top: 45%; */
     border: none;
     cursor: pointer;
     padding: 2%;
     background-color: black;
     color: white;
+    /* border :7px solid red */
+}
+#smp-div{
+    /* border: 3px solid black; */
+    width: 100%;
+   margin-top: 5% !important;
+   margin-left: 100% !important;
+    
 }
 #text{
     width: 130px;
@@ -645,4 +650,3 @@ color: #ccc;
 #lvc{
     margin-left: 200px;
 }
-  

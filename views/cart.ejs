@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart Page</title>
     <link href="https://www.tanishq.co.in/favicon.png" rel="shortcut icon" type="image/x-icon">
-    <link rel="stylesheet" href="./css_properties/cart.css">
+    <link rel="stylesheet"  href= "/css/cart.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
@@ -405,7 +405,11 @@
 <div id="biggerforflex">
 
     <div id="items_cartdiv">
-       
+       <%cart_items.forEach(function(item){%>
+        <img src="<%=item.image%>"/>
+        <p id="name"><%=item.name%></p>
+        <p id="price">₹<%=item.price%></p>
+        <% }) %>
     </div>
      
     <div id="pricedetails">
@@ -416,7 +420,7 @@
         </div>
           <p id="showsuccessofvoucher"></p>
         <div id="ordertotal">
-            <p>ORDER TOTAL  <span id="for_total"></span></p>
+            <p>ORDER TOTAL  <span id="for_total"><%=cart_data[0].price%></span></p>
         </div>
 
         <div id="shippingdiscount">
@@ -424,7 +428,7 @@
         </div>
        
         <div id="youpaydiv">
-            <p id="youpay">YOU PAY <span id="for_total1"></span></p>
+            <p id="youpay">YOU PAY <span id="for_total1"><%=sum%></span></p>
         </div>
         <p id="inclusive">INCLUSIVE OF ALL TAXES*</p>
         <div id="linkcheckout"><button id="checkoutbot">PROCEED TO CHECKOUT</button></div>
@@ -433,4 +437,4 @@
 </div>
 </body>
 </html>
-<script src="./scripts/cart.js"></script>
+<!-- <script src="./scripts/cart.js"></script> -->
