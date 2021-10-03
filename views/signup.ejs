@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUP Page</title>
+    <link href="https://www.tanishq.co.in/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <script src="./scripts/login.js"></script>
+    <link rel="stylesheet" href="/css/signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="div-for-pic">
+        <a href="/index"><img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/4417c959-3482-4f71-942a-a12e015997b6/tanishq.svg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-4417c959-3482-4f71-942a-a12e015997b6-nv8w2CB" alt="TANISHQ Logo"></a>
+    </div>
+
+     <fieldset id="fieldste2">
+
+        <legend id="legend">SIGNUP</legend>
+          <div id="titleandname">
+             <select id="title1">
+                 <option value="Mr">Mr</option>
+                 <option value="Ms">Ms</option>
+             </select>
+             <input type="text" placeholder=" FIRST NAME" id="firstname">
+          </div>        
+           
+           <input type="text" placeholder="LAST NAME" id="lastname">
+            <input type="number" placeholder="MOBILE NUMBER" id="mobnumber">
+            <input type="email" placeholder="EMAIL ID" id="email">
+            <input type="PASSWORD" placeholder="PASSWORD" id="password">
+
+            <div>
+                <input type="checkbox" id="checkboxid">I agree to the <a href="#" class="termscond">Terms & Conditions *</a> and <a href="#"  class="termscond"> Privacy policy</a> 
+            </div>
+          
+                 <button onclick="regsiterClick()" id="register" >REGISTER</button>  
+                 <p id="showerror" ></p>   
+     </fieldset>
+</body>
+</html>

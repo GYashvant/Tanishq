@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyAccount</title>
+    <link href="https://www.tanishq.co.in/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <script src="./scripts/login.js"></script>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="div-for-pic">
+      <a href="/index"><img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/4417c959-3482-4f71-942a-a12e015997b6/tanishq.svg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0RT10QIMVSTFU3006-4417c959-3482-4f71-942a-a12e015997b6-nv8w2CB" alt="Logo" style="cursor: pointer;"></a>
+    </div>
+
+     
+    <div id="main-for-logsign">
+
+        <div id="for-login">
+              <div class="login2">LOGIN VIA OTP    <button id="plusbtn">+</button> </div>
+                
+              
+             
+                <fieldset id="using_password" class="login1"> 
+                    <legend id="legend">LOGIN VIA EMAIL</legend>
+                    <input type="text" id="email123" placeholder="EMAIL">
+                    <input type="password" id="password1" placeholder="PASSWORD">
+  
+                     <div id="remember">
+                         <input type="checkbox" id="check2">
+                      <label id="label">REMEMBER ME</label>
+                      <p id="para"><a href="#">FORGOT PASSWORD?</a></p>
+                     </div>
+                     
+                   <button class="btnlogin" onclick="login()">SUBMIT</button>
+                </fieldset>    
+                 <p id="showerror"></p>
+
+         
+             
+
+              <div id="login1" class="login2"> LOGIN VIA FACEBOOK/GOOGLE    <button id="plusbtn">+</button></div>
+        </div>
+
+        <div id="for-line"></div>
+
+        <div id="signup">
+                <p id="newuser">NEW USER? <span id="create"> CREATE AN ACCOUNT</span></p>
+                <p id="create1">Benefits of Creating an New Account</p>
+                <ul>
+                    <li>You will get Benefits from our loyalty Program called Encircle Which entitles you to earn points for your Purchase which you can redeem in Subsequent Purchases.</li>
+                    <li>You will get Special Previews to our Limited Collections and Sales.</li>
+                    <li>You will Receive offers tailor-made for you.</li>
+                </ul>
+                 
+                    <button id="btnsignup"><a href="/signup">SIGN UP NOW</a>  </button>
+
+                    <div id="welcome_aunty">
+                        <p>How can i help you  ?<button onclick="onclickaunty()" id="cancelbtn">x</button></p>
+                        <div id="div_auntyimg"><img src="https://storage.googleapis.com/rso-offers/rsoresized.png" alt="Welcome girl"> </div>
+                    </div>
+        </div>
+    </div>    
+</body>
+</html>
