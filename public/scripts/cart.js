@@ -1,6 +1,8 @@
 let total=0;
 let count=0;
- function show_cart(){
+const Cart = require('../../src/models/cart.model')
+ /* function show_cart(){
+
   let cart_data= JSON.parse( localStorage.getItem("add-cart"));
   let items_of_cart =document.getElementById("items_cartdiv")
 
@@ -61,7 +63,7 @@ let count=0;
     num_of_prod.textContent= "CART ITEMS -" + count;
     
 });
- }
+ } */
 let forremove=document.getElementById("forremove")
 
 show_cart()

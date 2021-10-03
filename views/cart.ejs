@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    
 </head>
 <body>
 
@@ -26,7 +25,7 @@
             <li><a class="ancr" href="#">GOLDEN HARVEST</a></li>
             <li><a class="ancr" href="#">BOOK AN APPOINTMENT</a></li>
             <li><i class="ancr" class="far fa-heart"></i><a href="#" style="text-decoration: none;">WISHLIST</a></li>
-            <li><i class="ancr" class="fas fa-shopping-cart"></i><a href="#" style="text-decoration: none;">CART(<span id="cart">0</span>)</a></li>
+            <li><i class="ancr" class="fas fa-shopping-cart"></i><a href="#" style="text-decoration: none;">CART(<span id="cart"><%=cart_items.length%></span>)</a></li>
         </ul>
     </div>
     <hr class="hr">
@@ -400,27 +399,21 @@
     <hr class="hr">
 
     <p><a href="index.html">HOME</a>  > CART</p>
-    
-    <h1 id="num_of_products">Number of products</h1>
+    <h1 id="num_of_products">CART ITEMS = <%=cart_items.length%></h1>
 <div id="biggerforflex">
-
     <div id="items_cartdiv">
        <%cart_items.forEach(function(item){%>
         <img src="<%=item.image%>"/>
         <p id="name"><%=item.name%></p>
         <p id="price">₹<%=item.price%></p>
+        <button onclick= "window.location.href='/cart/delete_item/<%=item.name%>'">remove</button>
         <% }) %>
     </div>
      
     <div id="pricedetails">
         <h1 id="summary">ORDER SUMMARY</h1>
-        <div id="forinputofvoucher">
-            <input type="text" placeholder="Enter Promo code" id="voucher">
-            <button id="applyvoucher" onclick="applyVoucher(event)">APPLY</button>
-        </div>
-          <p id="showsuccessofvoucher"></p>
         <div id="ordertotal">
-            <p>ORDER TOTAL  <span id="for_total"><%=cart_data[0].price%></span></p>
+            <p>ORDER TOTAL  <span id="for_total"><%=sum%></span></p>
         </div>
 
         <div id="shippingdiscount">
@@ -437,4 +430,4 @@
 </div>
 </body>
 </html>
-<!-- <script src="./scripts/cart.js"></script> -->
+<!-- <script src="scripts/cart1.js"></script> -->
