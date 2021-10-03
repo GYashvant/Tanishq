@@ -16,7 +16,6 @@ router.post("/", async(req, res)=>{
 router.get("/page2", async(req, res)=>{
     
     count++
-    console.log(count);
     let details;
     if(count==1){
          details = await Earring.find().limit(30);
@@ -34,7 +33,7 @@ router.get("/page2", async(req, res)=>{
 })
 
 
-router.get("/earrings", async(req, res)=>{
+router.get("", async(req, res)=>{
    const details = await Earring.find().limit(15)
      res.render("earrings",{
          details,

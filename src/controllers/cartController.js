@@ -10,16 +10,6 @@ let count = 1;
 let cart_data;
 const item_set = new Set();
 
-/* router.get("", async(req, res)=>{
-    let cart_data = await Earring.find()
-    res .render('cart',{
-        cart_items,
-        sum,
-        cart_data
-    })
-}) */
-
-
 router.get('/cartItems', async(req, res) => {
     cart_items = await Cart.find({})
     res.render("cart",{

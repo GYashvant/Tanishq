@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADDRESS & PAYMENT</title>
+    <link href="https://www.tanishq.co.in/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="./css/payment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+<body>
+
+<h1 id="address">ADDRESS & PAYMENT</h1>
+<div id="paymntsdiv">
+
+ <fieldset id="fieldste4">
+
+     <legend id="legend4"> BILLING ADDRESS</legend>
+          <input type="text" placeholder="NAME" id="fullname">
+
+         <input type="number" placeholder="MOBILE NUMBER" id="mobnumber1">
+
+         <input type="email" placeholder="EMAIL ID" id="email">
+
+         <input id="addlin1" type="address" placeholder="ADDRESS LINE 1">
+
+         <input id="addlin2" type="address" placeholder="ADDRESS LINE 2">
+        
+         <div id="ctypin">
+             <input id="addlin3" type="address" placeholder="CITY">
+
+             <input id="addlin4" type="number" placeholder="PIN">
+         </div>
+        
+         <input id="addlin5" type="text" placeholder="STATE">
+
+  </fieldset>
+
+
+
+  <fieldset id="fieldste5">
+      
+     <legend id="legend5"> PAYMENT DETAILS</legend>
+       
+         <div id="acceptedimage">
+           <img src="https://logos-world.net/wp-content/uploads/2020/04/Visa-Logo-2006-2014.png" alt="VISA LOGO">
+
+           <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Rupay-Logo.png" alt="rupay logo">
+
+           <img src="https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/news8331.jpeg" alt="paytm">
+
+           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/UPI-Logo-vector.svg/1200px-UPI-Logo-vector.svg.png" alt="UPI">
+
+           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2560px-MasterCard_Logo.svg.png" alt="mastercard">
+
+         </div>
+          <input type="text" placeholder="NAME ON CARD*" id="fullname2">
+      
+         <input type="number" placeholder="CARD NUMBER*" id="mobnumber">
+         
+
+          <div id="expiryyear">
+             <input id="expirymonth" type="text" placeholder="EXPIRY MONTH ">
+
+             <input id="expiryyear1" type="number" placeholder="EXPIRY YEAR">
+            
+             <input type="number" id="cvv" placeholder="CVV">
+          </div>
+         <button id="paymnetdon" onclick="payclick()">PAY</button>
+
+  </fieldset>
+</div>
+</body>
+</html>
+<script src="./scripts/payment.js"></script>

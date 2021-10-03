@@ -190,7 +190,7 @@
                             <div class="column">
                                 <h3>DIAMOND</h3>
                                 <a href="#">ALL JEWELLERY</a>
-                                <a href="earrings.html">EARRINGS</a>
+                                <a href="/earrings">EARRINGS</a>
                                 <a href="#">PENDANTS</a>
                                 <a href="#">FINGER RINGS</a>
                                 <a href="#">MANGALSUTRA</a>
@@ -201,7 +201,7 @@
                             <div class="column">
                                 <h3>PLATINUM</h3>
                                 <a href="#">NECKLACE</a>
-                                <a href="earrings.html">EARRINGS</a>
+                                <a href="/earrings">EARRINGS</a>
                                 <a href="#">CHAINS</a>
                                 <a href="#">EARINGS</a>
                                 <a href="#">CHAINS</a>
@@ -242,7 +242,7 @@
                             <div class="column">
                                 <h3>24K GOLD</h3>
                                 <a href="#">CROWNS</a>
-                                <a href="earrings.html">EARRINGS</a>
+                                <a href="/earrings">EARRINGS</a>
                                 <a href="#">HAIRPINS</a>
                                 <a href="#">NECKLACE</a>
                                 <a href="#">TORC</a>
@@ -283,7 +283,7 @@
                             <div class="column">
                                 <h3>WOMEN HEAD & NECK JEWELLERY</h3>
                                 <a href="#">CROWNS</a>
-                                <a href="earrings.html">EARRINGS</a>
+                                <a href="/earrings">EARRINGS</a>
                                 <a href="#">HAIRPINS</a>
                                 <a href="#">NECKLACE</a>
                                 <a href="#">TORC</a>
@@ -331,7 +331,7 @@
                             </div>
                             <div class="column">
                                 <a href="#">NECKLACE</a>
-                                <a href="earrings.html">EARRINGS</a>
+                                <a href="/earrings">EARRINGS</a>
                                 <a href="#">CHAINS</a>
                                 <a href="#">EARINGS</a>
                                 <a href="#">CHAINS</a>
@@ -341,7 +341,7 @@
                             </div>
                             <div class="column">
                                 <a href="#">ALL JEWELLERY</a>
-                                <a href="earrings.html">EARRINGS</a>
+                                <a href="/earrings">EARRINGS</a>
                                 <a href="#">PENDANTS</a>
                                 <a href="#">FINGER RINGS</a>
                                 <a href="#">MANGALSUTRA</a>
@@ -368,7 +368,7 @@
                         <div class="row">
                             <div class="column">
                                 <h3>CATEGORY</h3>
-                                <a href="earrings.html">EARRINGS</a>
+                                <a href="/earrings">EARRINGS</a>
                                 <a href="#">PENDANTS</a>
                                 <a href="#">BRACELET</a>
                                 <a href="#">RINGS</a>
@@ -398,36 +398,40 @@
     </div>
     <hr class="hr">
 
-    <p><a href="index.html">HOME</a>  > CART</p>
+    <p><a href="/index">HOME</a>  > CART</p>
     <h1 id="num_of_products">CART ITEMS = <%=cart_items.length%></h1>
-<div id="biggerforflex">
-    <div id="items_cartdiv">
-       <%cart_items.forEach(function(item){%>
-        <img src="<%=item.image%>"/>
-        <p id="name"><%=item.name%></p>
-        <p id="price">₹<%=item.price%></p>
-        <button onclick= "window.location.href='/cart/delete_item/<%=item.name%>'">remove</button>
-        <% }) %>
-    </div>
+    <div id="biggerforflex">
+    
+        <div id="items_cartdiv">
+           <%cart_items.forEach(function(item){%>
+            <div>
+                <img src="<%=item.image%>"/>
+            </div>
+            <div>
+                <p id="name"><%=item.name%></p>
+                <p id="price">₹<%=item.price%></p>
+                <button onclick= "window.location.href='/cart/delete_item/<%=item.name%>'">Remove</button>
+            </div>
+            <% }) %>
+        </div>
+         
+        <div id="pricedetails">
+            <h1 id="summary">ORDER SUMMARY</h1>
+            <div id="ordertotal">
+                <p>ORDER TOTAL  <span id="for_total"><%=sum%></span></p>
+            </div>
+    
+            <div id="shippingdiscount">
+                <p>SHIPPING <span id="free1">FREE</span></p>
+            </div>
+           
+            <div id="youpaydiv">
+                <p id="youpay">YOU PAY <span id="for_total1"><%=sum%></span></p>
+            </div>
+            <p id="inclusive">INCLUSIVE OF ALL TAXES*</p>
+            <div id="linkcheckout"><button id="checkoutbot">PROCEED TO CHECKOUT</button></div>
+        </div>
      
-    <div id="pricedetails">
-        <h1 id="summary">ORDER SUMMARY</h1>
-        <div id="ordertotal">
-            <p>ORDER TOTAL  <span id="for_total"><%=sum%></span></p>
-        </div>
-
-        <div id="shippingdiscount">
-            <p>SHIPPING <span id="free1">FREE</span></p>
-        </div>
-       
-        <div id="youpaydiv">
-            <p id="youpay">YOU PAY <span id="for_total1"><%=sum%></span></p>
-        </div>
-        <p id="inclusive">INCLUSIVE OF ALL TAXES*</p>
-        <div id="linkcheckout"><button id="checkoutbot">PROCEED TO CHECKOUT</button></div>
     </div>
- 
-</div>
-</body>
-</html>
-<!-- <script src="scripts/cart1.js"></script> -->
+    </body>
+    </html>

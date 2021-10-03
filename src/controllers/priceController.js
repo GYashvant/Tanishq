@@ -7,7 +7,6 @@ const router = express.Router()
 
 router.get("/price=0-10000", async(req, res)=>{
     const details = await Earring.find({$and: [{price:{$gt:0}},{price:{$lt:10000}}]})
-
     res.render("earrings",{
         details
     })

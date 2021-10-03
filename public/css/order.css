@@ -90,13 +90,22 @@ div > img > #auto-change {
     margin-bottom: 100px;
 }
 
-.ancr {
+.ancr , #cartbutton {
     list-style-type: none;
     text-decoration: none;
     list-style: none;
     text-decoration: none;
     opacity: 0.7;
     color: #181818;
+    border:none;
+    background-color: white;
+    cursor: pointer;
+}
+#cartbutton{
+    margin-bottom: 0.05%;
+}
+#cart{
+    font-size: 100%;
 }
 #shop{
     font-family:  'Playfair Display', serif;

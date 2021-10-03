@@ -14,7 +14,7 @@ function login(){
    for(var i=0;i<forcheck.length;i++){
     if(forcheck[i].email===taking_email && forcheck[i].password===taking_pasw){
         alert("Login Successfull")
-        window.location.href="index.html"
+        window.location.href="/index"
         loginchange.textContent= "Hi " +forcheck[i].name
         return
     }
@@ -84,7 +84,7 @@ function regsiterClick(){
             showerror.textContent="SignUp Successfull"
             showerror.style.color="green"
           alert("Signup successfull")
-          window.location.href="login.html";
+          window.location.href="/login";
           const userdata_projectjson=JSON.stringify(userdata);
           localStorage.setItem("projectuserdata" ,userdata_projectjson)
        }

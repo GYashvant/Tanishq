@@ -1,3 +1,3 @@
 setTimeout (() =>{
-    window.location.href = "index.html"
+    window.location.href = "/index"
 },2000) 

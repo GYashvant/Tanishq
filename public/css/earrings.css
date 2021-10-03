@@ -618,6 +618,7 @@ color: #ccc;
     border: none;
     cursor: pointer;
     padding: 2%;
+    /* margin-bottom: 3%; */
     background-color: black;
     color: white;
     /* border :7px solid red */
@@ -625,6 +626,7 @@ color: #ccc;
 #smp-div{
     /* border: 3px solid black; */
     width: 100%;
+    
    margin-top: 5% !important;
    margin-left: 100% !important;
     

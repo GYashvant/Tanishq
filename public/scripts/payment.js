@@ -10,7 +10,6 @@ let details = document.getElementById("paymntsdiv")
  function payclick(){
 
     let fullanme =document.getElementById("fullname").value;
-    console.log(fullanme)
     let mobnumber1 =document.getElementById("mobnumber1").value;
     let email =document.getElementById("email").value;
     let addlin1 =document.getElementById("addlin1").value;
@@ -35,7 +34,7 @@ if(fullanme==='' || mobnumber1=="" || email=="" || addlin1=="" || addlin2=="" ||
 }
  else{
     setTimeout (() =>{
-        window.location.href = "paid.html"
+        window.location.href = "/pay"
     },2000) 
  }
    

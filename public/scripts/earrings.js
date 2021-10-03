@@ -13,3 +13,10 @@ for ( let i = 0; i < coll.length; i++) {
     } 
 });
 }
+
+let data = JSON.parse(localStorage.getItem("projectuserdata"))
+  
+if(data)
+setTimeout (() =>{
+  document.getElementById("change_name").innerHTML = data[data.length-1].first_name
+},1000) 

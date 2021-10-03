@@ -17,9 +17,40 @@ margin-top: 80px;
 /* border: 1px solid black; */
 width: 60%;
 display: grid;
+grid-template-columns: 30% 40%;
 margin-left: 6%;
 font-family: 'Roboto Slab', serif;
+/* border: 1px solid red; */
+height: 178px;
+grid-gap: 8%;
+font-weight: bold;
 }
+#items_cartdiv>div:last-child{
+    /* border: 2px solid blue; */
+}
+#items_cartdiv>div:first-child{
+    /* border: 2px solid yellow; */
+
+}
+#items_cartdiv button{
+    background-color: gray;
+    color: white;
+    padding: 8px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#items_cartdiv button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+}
+#items_cartdiv>div img{
+    width: 80%;
+    height: 175px;
+}
+
 #foronebox{
 /* border: 1px solid blue; */
 max-height: 200px;
@@ -719,7 +750,6 @@ overflow: hidden;
 }
 
 /* .navbar a {
-
 } */
 
 .dropdown{
