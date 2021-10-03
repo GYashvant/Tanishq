@@ -22,7 +22,7 @@
             <li><a class="ancr" href="#">GOLDEN HARVEST</a></li>
             <li><a class="ancr" href="#">BOOK AN APPOINTMENT</a></li>
             <li><i class="ancr" class="far fa-heart"></i><a href="#" style="text-decoration: none;">WISHLIST</a></li>
-            <li><i class="ancr" class="fas fa-shopping-cart"></i><a href="cart.html"  style="text-decoration: none;">CART(<span id="cart">0</span>)</a></li>
+            <li><i class="ancr" class="fas fa-shopping-cart"></i><button onclick="window.open('/cart/<%=details[0].name%>')">CART</button><span id="cart">0</span></li>
         </ul>
     </div>
     <hr class="hr">
@@ -420,10 +420,18 @@
             </div>
             <div id="btns">
             <button id="try-on">TRY ON</button>
-            <button id="add-cart" onclick="window.open('/cart/<%=details[0].name%>')" >ADD TO CART</button>
+            <button id="add-cart" onclick="addcart()">ADD TO CART</button>
             <button id="booking">BOOK AN APPOINTMENT</button>
             </div>
             <p id="correct">✓<span id="items-left">ONLY 1 LEFT IN STOCK</span></p>
         </div>
 </body>
 </html>
+<script>
+    let count = 0  
+    function addcart(){
+        let cart = document.getElementById("cart")
+        count++;
+        cart.innerHTML = count
+    }
+</script>

@@ -32,6 +32,20 @@ font-weight: bold;
     /* border: 2px solid yellow; */
 
 }
+#items_cartdiv button{
+    background-color: gray;
+    color: white;
+    padding: 8px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#items_cartdiv button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+}
 #items_cartdiv>div img{
     width: 80%;
     height: 175px;

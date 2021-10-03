@@ -401,7 +401,7 @@
 
     <p><a href="index.html">HOME</a>  > CART</p>
     
-    <h1 id="num_of_products">Number of products</h1>
+    <h1 id="num_of_products">CART ITEMS = <%=cart_items.length%></h1>
 <div id="biggerforflex">
 
     <div id="items_cartdiv">
@@ -412,19 +412,15 @@
         <div>
             <p id="name"><%=item.name%></p>
             <p id="price">₹<%=item.price%></p>
+            <button onclick= "window.location.href='/cart/delete_item/<%=item.name%>'">Remove</button>
         </div>
         <% }) %>
     </div>
      
     <div id="pricedetails">
         <h1 id="summary">ORDER SUMMARY</h1>
-        <div id="forinputofvoucher">
-            <input type="text" placeholder="Enter Promo code" id="voucher">
-            <button id="applyvoucher" onclick="applyVoucher(event)">APPLY</button>
-        </div>
-          <p id="showsuccessofvoucher"></p>
         <div id="ordertotal">
-            <p>ORDER TOTAL  <span id="for_total"><%=cart_data[0].price%></span></p>
+            <p>ORDER TOTAL  <span id="for_total"><%=sum%></span></p>
         </div>
 
         <div id="shippingdiscount">
