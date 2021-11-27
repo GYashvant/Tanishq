@@ -1,6 +1,7 @@
 const express = require("express")
 
 const app = express()
+require("dotenv").config()
 
 app.use(express.json())
 const connect = require("./configs/db")
@@ -32,7 +33,7 @@ app.use("/signup",signupController)
 /* app.use(express.static(__dirname)); */
 
 
-app.listen(3000, async function(){
+app.listen(process.env.PORT || 3000, async function(){
     await connect()
 
     console.log("server running");
