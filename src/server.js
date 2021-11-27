@@ -23,6 +23,7 @@ app.use("/earrings",earringController)
 app.use("/payment",paymentController)
 app.use("/pay", payController)
 app.use("/",indexController)
+app.use("/index",indexController)
 app.use("/login",loginController)
 app.use("/signup",signupController)
 
